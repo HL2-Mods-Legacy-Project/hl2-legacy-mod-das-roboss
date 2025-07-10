@@ -1,12 +1,11 @@
 & "$PSScriptRoot\..\gitmodules\mod-installer\build_all.ps1" `
-  -Version "<version>" `
+  -Version "2.0.0" `
   -PreReleaseVersion "beta.1" `
-  -OutputFilePrefix "<output file prefix>" `
-  -ModName "<mod name>" `
-  -ModFolder "<mod folder>" `
-  -AdditionalModFolders @() `
+  -OutputFilePrefix "DasRoboss" `
+  -ModName "Das Roboss" `
+  -ModFolder "dasroboss" `
   -ModFilesPath "$PSScriptRoot\..\game" `
-  -ModBaseFilesUrl "<url to mod base files zip>" `
-  -ModBaseFilesUrlHash "<mod base files zip sha256>" `
-  -ModReadmePath "<mod readme path>" `
+  -ModBaseFilesUrl "https://github.com/HL2-Mods-Legacy-Project/hl2-legacy-registry/releases/download/das-roboss/dasroboss-Original.zip" `
+  -ModBaseFilesUrlHash "f6d906b151a25e72373a103030a8d42abc4f5a946f7d684da0dd0e780c3bdb02" `
+  -ModReadmePath "dasroboss.txt" `
   -PublishPath "$PSScriptRoot\..\artifacts\publish"
